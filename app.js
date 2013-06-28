@@ -10,6 +10,7 @@ var express = require('express')
   , path = require('path')
   , config = require("./config/" + process.env.NODE_ENV)
   , routes = require('./routes')
+  , compass = require('node-compass')
   , logger = require("./lib/logger");
 
 require('express-resource')
@@ -34,6 +35,7 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+  app.use(compass());
   app.use(express.static(path.join(__dirname, 'public')));
 });
 

@@ -10,6 +10,7 @@
     "jade": "*",
     "sequelize": "*",
     "mysql": "*",
+    "node-compass": "*",
     "express-resource": "*"
   }
 }
