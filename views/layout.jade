@@ -2,7 +2,31 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/woo.css')
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+
   body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          button.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+          a.brand(href='#') Success
+          .nav-collapse.collapse
+            ui.nav
+              li
+                a() About
+              li
+                a() Home
+          
     block content
+    block javascripts
+    script(src='/javascripts/ember-1.0.0-rc.6.min.js')
+    script(src='/javascripts/jquery-1.10.1.min.js')
+    script(src='/javascripts/application.js')

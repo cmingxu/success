@@ -1,0 +1,16 @@
+// Import all the variables into the main css file.
+@import "variables";
+
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+
+#room
+  #char_window
+  #sidebar
+    width: %40;
+    min-width: 100px;
+    border-left: 1px solid red;

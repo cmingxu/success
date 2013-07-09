@@ -1,0 +1,12 @@
+
+User:
+
+Room:
+  Identifer(String, permanent)
+
+Resource:
+  type[Image|Video|Audio|Other]
+  name(String)
+  file_path(String)
+
+ResourceTag:

@@ -5,6 +5,8 @@ require_controller = function (resource) {
 
 routes = function (app) {
   app.resource("users", require_controller("users"));
+  app.resource("rooms", require_controller("rooms"));
+  app.resource("tags", require_controller("tags"));
   app.get("/", require_controller("welcome").index);
 };
 

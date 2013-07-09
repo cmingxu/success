@@ -1,6 +1,12 @@
 welcome = {
   index: function (req, res, next) {
-    res.send("date");
+    res.render("welcome/index");
+  },
+
+  dashboard: function (req, res, next) {
+  },
+
+  setting: function () {
   }
 }
 
